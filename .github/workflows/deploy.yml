@@ -38,6 +38,8 @@ jobs:
           echo ::set-output name=name::"${NAME}"
           echo ::set-output name=stack-name::"${ORG}-${ENVIRONMENT}-${NAME}"
           echo ::set-output name=cicd-bucket::"${ORG}-${ENVIRONMENT}-cicd"
+      - name: Build
+        run: make vendor
       - name: Deploy
         run: |
           sam deploy \
