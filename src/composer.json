@@ -1,0 +1,12 @@
+{
+    "name": "rdok/aws-sam-php",
+    "authors": [
+        {
+            "name": "Rizart Dokollari"
+        }
+    ],
+    "require": {
+        "bref/bref": "^1.2"
+    },
+    "description": "AWS SAM PHP"
+}
