@@ -15,7 +15,7 @@ on:
         description: "Allowed values: prod, test"
         default: prod
 jobs:
-  build-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
