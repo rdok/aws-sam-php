@@ -48,5 +48,3 @@ jobs:
             --stack-name "${{ steps.env.outputs.stack-name }}" \
             --capabilities CAPABILITY_IAM \
             --no-fail-on-empty-changeset
-            --parameter-overrides \
-              DomainName=aws-sam-php-test.rdok.co.uk

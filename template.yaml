@@ -2,20 +2,7 @@ AWSTemplateFormatVersion: "2010-09-09"
 Transform: AWS::Serverless-2016-10-31
 Description: AWS SAM & PHP template using bref.
 Parameters:
-  DomainName:
-    Type: String
-  Route53HostedZoneId:
-    Type: String
-    Default: 'ZSY7GT2NEDPN0'
 Resources:
-  Certificate:
-    Type: AWS::CertificateManager::Certificate
-    Properties:
-      ValidationMethod: DNS
-      DomainValidationOptions:
-        - DomainName: !Ref DomainName
-          HostedZoneId: !Ref Route53HostedZoneId
-      DomainName: !Ref DomainName
   MainFunction:
     Type: AWS::Serverless::Function
     Properties:
