@@ -9,3 +9,4 @@ start: vendor
 vendor:
 	docker run --user $${UID}:$${GID} --volume "${CURRENT_DIR}/src":/app \
 		composer install
+
